@@ -14,3 +14,7 @@ path = "src/bin/memory_demo.rs"
 [[bin]]
 name = "lifetime_demo"
 path = "src/bin/lifetime_demo.rs"
+
+[[bin]]
+name = "structs_traits_generics"
+path = "src/bin/structs_traits_generics.rs"

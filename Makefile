@@ -1,4 +1,4 @@
-.PHONY: all rust cpp run-rust run-cpp run-rust-mem run-cpp-mem run-rust-lt run-cpp-lt clean
+.PHONY: all rust cpp run-rust run-cpp run-rust-mem run-cpp-mem run-rust-lt run-cpp-lt run-rust-stg run-cpp-stg clean
 
 CXX      ?= clang++
 CXXFLAGS  = -std=c++17 -Wall -Wextra -Wpedantic -O2
@@ -8,7 +8,7 @@ all: rust cpp
 rust:
 	cd rust && cargo build --release 2>&1
 
-cpp: cpp/ownership_demo cpp/memory_demo cpp/lifetime_demo
+cpp: cpp/ownership_demo cpp/memory_demo cpp/lifetime_demo cpp/structs_traits_generics
 
 cpp/ownership_demo: cpp/ownership_demo.cpp
 	$(CXX) $(CXXFLAGS) -o $@ $<
@@ -17,6 +17,9 @@ cpp/memory_demo: cpp/memory_demo.cpp
 	$(CXX) $(CXXFLAGS) -o $@ $<
 
 cpp/lifetime_demo: cpp/lifetime_demo.cpp
+	$(CXX) $(CXXFLAGS) -o $@ $<
+
+cpp/structs_traits_generics: cpp/structs_traits_generics.cpp
 	$(CXX) $(CXXFLAGS) -o $@ $<
 
 run-rust: rust
@@ -55,6 +58,18 @@ run-cpp-lt: cpp
 	@echo "──────────────────────────────────────"
 	./cpp/lifetime_demo
 
+run-rust-stg: rust
+	@echo "──────────────────────────────────────"
+	@echo " RUST: Structs, Traits, Generics"
+	@echo "──────────────────────────────────────"
+	./rust/target/release/structs_traits_generics
+
+run-cpp-stg: cpp
+	@echo "──────────────────────────────────────"
+	@echo " C++: Classes, Interfaces, Templates"
+	@echo "──────────────────────────────────────"
+	./cpp/structs_traits_generics
+
 clean:
 	cd rust && cargo clean
-	rm -f cpp/ownership_demo cpp/memory_demo cpp/lifetime_demo
+	rm -f cpp/ownership_demo cpp/memory_demo cpp/lifetime_demo cpp/structs_traits_generics
