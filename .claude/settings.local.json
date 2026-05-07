@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(rustc --version)",
+      "Bash(cargo --version)",
+      "Bash(g++ --version)",
+      "Bash(clang++ --version)",
+      "Bash(make all *)",
+      "Bash(make run-rust *)",
+      "Bash(make run-cpp *)",
+      "Bash(make run-rust-mem *)",
+      "Bash(make run-cpp-mem *)",
+      "Bash(make run-rust-lt *)",
+      "Bash(make run-cpp-lt *)",
+      "Bash(cargo build *)",
+      "Bash(clang++ *)",
+      "Bash(make run-rust-stg *)",
+      "Bash(make run-cpp-stg *)"
+    ]
+  }
+}
