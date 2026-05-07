@@ -18,3 +18,11 @@ path = "src/bin/lifetime_demo.rs"
 [[bin]]
 name = "structs_traits_generics"
 path = "src/bin/structs_traits_generics.rs"
+
+[[bin]]
+name = "closures_demo"
+path = "src/bin/closures_demo.rs"
+
+[[bin]]
+name = "iterators_demo"
+path = "src/bin/iterators_demo.rs"
