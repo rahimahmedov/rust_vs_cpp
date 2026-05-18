@@ -1,1 +1,292 @@
-    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.01s
+   0.877093209s  INFO prepare_target{force=false package_id=ownership_demo v0.1.0 (/Users/rahimahmedov/VSCodeProjects/rust_vs_cpp/rust) target="closures_demo"}: cargo::core::compiler::fingerprint: fingerprint error for ownership_demo v0.1.0 (/Users/rahimahmedov/VSCodeProjects/rust_vs_cpp/rust)/Check { test: false }/TargetInner { name: "closures_demo", doc: true, ..: with_path("/Users/rahimahmedov/VSCodeProjects/rust_vs_cpp/rust/src/bin/closures_demo.rs", Edition2021) }
+   0.877126167s  INFO prepare_target{force=false package_id=ownership_demo v0.1.0 (/Users/rahimahmedov/VSCodeProjects/rust_vs_cpp/rust) target="closures_demo"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/rahimahmedov/VSCodeProjects/rust_vs_cpp/rust/target/debug/.fingerprint/ownership_demo-cf54904b300928d5/bin-closures_demo`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   7: cargo::ops::cargo_compile::compile_ws
+   8: cargo::ops::cargo_compile::compile_with_exec
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+   0.882338667s  INFO prepare_target{force=false package_id=ownership_demo v0.1.0 (/Users/rahimahmedov/VSCodeProjects/rust_vs_cpp/rust) target="closures_demo"}: cargo::core::compiler::fingerprint: fingerprint error for ownership_demo v0.1.0 (/Users/rahimahmedov/VSCodeProjects/rust_vs_cpp/rust)/Check { test: true }/TargetInner { name: "closures_demo", doc: true, ..: with_path("/Users/rahimahmedov/VSCodeProjects/rust_vs_cpp/rust/src/bin/closures_demo.rs", Edition2021) }
+   0.882349125s  INFO prepare_target{force=false package_id=ownership_demo v0.1.0 (/Users/rahimahmedov/VSCodeProjects/rust_vs_cpp/rust) target="closures_demo"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/rahimahmedov/VSCodeProjects/rust_vs_cpp/rust/target/debug/.fingerprint/ownership_demo-e8e2d547a051df90/test-bin-closures_demo`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   7: cargo::ops::cargo_compile::compile_ws
+   8: cargo::ops::cargo_compile::compile_with_exec
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+   0.882519625s  INFO prepare_target{force=false package_id=ownership_demo v0.1.0 (/Users/rahimahmedov/VSCodeProjects/rust_vs_cpp/rust) target="iterators_demo"}: cargo::core::compiler::fingerprint: fingerprint error for ownership_demo v0.1.0 (/Users/rahimahmedov/VSCodeProjects/rust_vs_cpp/rust)/Check { test: false }/TargetInner { name: "iterators_demo", doc: true, ..: with_path("/Users/rahimahmedov/VSCodeProjects/rust_vs_cpp/rust/src/bin/iterators_demo.rs", Edition2021) }
+   0.882528917s  INFO prepare_target{force=false package_id=ownership_demo v0.1.0 (/Users/rahimahmedov/VSCodeProjects/rust_vs_cpp/rust) target="iterators_demo"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/rahimahmedov/VSCodeProjects/rust_vs_cpp/rust/target/debug/.fingerprint/ownership_demo-a58973072369f5b5/bin-iterators_demo`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   7: cargo::ops::cargo_compile::compile_ws
+   8: cargo::ops::cargo_compile::compile_with_exec
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+   0.882693959s  INFO prepare_target{force=false package_id=ownership_demo v0.1.0 (/Users/rahimahmedov/VSCodeProjects/rust_vs_cpp/rust) target="iterators_demo"}: cargo::core::compiler::fingerprint: fingerprint error for ownership_demo v0.1.0 (/Users/rahimahmedov/VSCodeProjects/rust_vs_cpp/rust)/Check { test: true }/TargetInner { name: "iterators_demo", doc: true, ..: with_path("/Users/rahimahmedov/VSCodeProjects/rust_vs_cpp/rust/src/bin/iterators_demo.rs", Edition2021) }
+   0.882700042s  INFO prepare_target{force=false package_id=ownership_demo v0.1.0 (/Users/rahimahmedov/VSCodeProjects/rust_vs_cpp/rust) target="iterators_demo"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/rahimahmedov/VSCodeProjects/rust_vs_cpp/rust/target/debug/.fingerprint/ownership_demo-bc2954df36a574fa/test-bin-iterators_demo`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   7: cargo::ops::cargo_compile::compile_ws
+   8: cargo::ops::cargo_compile::compile_with_exec
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+   0.882856542s  INFO prepare_target{force=false package_id=ownership_demo v0.1.0 (/Users/rahimahmedov/VSCodeProjects/rust_vs_cpp/rust) target="lifetime_demo"}: cargo::core::compiler::fingerprint: fingerprint error for ownership_demo v0.1.0 (/Users/rahimahmedov/VSCodeProjects/rust_vs_cpp/rust)/Check { test: false }/TargetInner { name: "lifetime_demo", doc: true, ..: with_path("/Users/rahimahmedov/VSCodeProjects/rust_vs_cpp/rust/src/bin/lifetime_demo.rs", Edition2021) }
+   0.882863042s  INFO prepare_target{force=false package_id=ownership_demo v0.1.0 (/Users/rahimahmedov/VSCodeProjects/rust_vs_cpp/rust) target="lifetime_demo"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/rahimahmedov/VSCodeProjects/rust_vs_cpp/rust/target/debug/.fingerprint/ownership_demo-5bbbf6b68e436fd2/bin-lifetime_demo`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   7: cargo::ops::cargo_compile::compile_ws
+   8: cargo::ops::cargo_compile::compile_with_exec
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+   0.883043959s  INFO prepare_target{force=false package_id=ownership_demo v0.1.0 (/Users/rahimahmedov/VSCodeProjects/rust_vs_cpp/rust) target="lifetime_demo"}: cargo::core::compiler::fingerprint: fingerprint error for ownership_demo v0.1.0 (/Users/rahimahmedov/VSCodeProjects/rust_vs_cpp/rust)/Check { test: true }/TargetInner { name: "lifetime_demo", doc: true, ..: with_path("/Users/rahimahmedov/VSCodeProjects/rust_vs_cpp/rust/src/bin/lifetime_demo.rs", Edition2021) }
+   0.883049875s  INFO prepare_target{force=false package_id=ownership_demo v0.1.0 (/Users/rahimahmedov/VSCodeProjects/rust_vs_cpp/rust) target="lifetime_demo"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/rahimahmedov/VSCodeProjects/rust_vs_cpp/rust/target/debug/.fingerprint/ownership_demo-1c326d00805be779/test-bin-lifetime_demo`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   7: cargo::ops::cargo_compile::compile_ws
+   8: cargo::ops::cargo_compile::compile_with_exec
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+   0.883221959s  INFO prepare_target{force=false package_id=ownership_demo v0.1.0 (/Users/rahimahmedov/VSCodeProjects/rust_vs_cpp/rust) target="memory_demo"}: cargo::core::compiler::fingerprint: fingerprint error for ownership_demo v0.1.0 (/Users/rahimahmedov/VSCodeProjects/rust_vs_cpp/rust)/Check { test: false }/TargetInner { name: "memory_demo", doc: true, ..: with_path("/Users/rahimahmedov/VSCodeProjects/rust_vs_cpp/rust/src/bin/memory_demo.rs", Edition2021) }
+   0.883228084s  INFO prepare_target{force=false package_id=ownership_demo v0.1.0 (/Users/rahimahmedov/VSCodeProjects/rust_vs_cpp/rust) target="memory_demo"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/rahimahmedov/VSCodeProjects/rust_vs_cpp/rust/target/debug/.fingerprint/ownership_demo-0d4f732dd26abfa5/bin-memory_demo`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   7: cargo::ops::cargo_compile::compile_ws
+   8: cargo::ops::cargo_compile::compile_with_exec
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+   0.883395709s  INFO prepare_target{force=false package_id=ownership_demo v0.1.0 (/Users/rahimahmedov/VSCodeProjects/rust_vs_cpp/rust) target="memory_demo"}: cargo::core::compiler::fingerprint: fingerprint error for ownership_demo v0.1.0 (/Users/rahimahmedov/VSCodeProjects/rust_vs_cpp/rust)/Check { test: true }/TargetInner { name: "memory_demo", doc: true, ..: with_path("/Users/rahimahmedov/VSCodeProjects/rust_vs_cpp/rust/src/bin/memory_demo.rs", Edition2021) }
+   0.883401959s  INFO prepare_target{force=false package_id=ownership_demo v0.1.0 (/Users/rahimahmedov/VSCodeProjects/rust_vs_cpp/rust) target="memory_demo"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/rahimahmedov/VSCodeProjects/rust_vs_cpp/rust/target/debug/.fingerprint/ownership_demo-73d2f008ac132b48/test-bin-memory_demo`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   7: cargo::ops::cargo_compile::compile_ws
+   8: cargo::ops::cargo_compile::compile_with_exec
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+   0.883554667s  INFO prepare_target{force=false package_id=ownership_demo v0.1.0 (/Users/rahimahmedov/VSCodeProjects/rust_vs_cpp/rust) target="ownership_demo"}: cargo::core::compiler::fingerprint: fingerprint error for ownership_demo v0.1.0 (/Users/rahimahmedov/VSCodeProjects/rust_vs_cpp/rust)/Check { test: false }/TargetInner { name: "ownership_demo", doc: true, ..: with_path("/Users/rahimahmedov/VSCodeProjects/rust_vs_cpp/rust/src/main.rs", Edition2021) }
+   0.883561292s  INFO prepare_target{force=false package_id=ownership_demo v0.1.0 (/Users/rahimahmedov/VSCodeProjects/rust_vs_cpp/rust) target="ownership_demo"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/rahimahmedov/VSCodeProjects/rust_vs_cpp/rust/target/debug/.fingerprint/ownership_demo-54989155915ccac1/bin-ownership_demo`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   7: cargo::ops::cargo_compile::compile_ws
+   8: cargo::ops::cargo_compile::compile_with_exec
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+   0.883714334s  INFO prepare_target{force=false package_id=ownership_demo v0.1.0 (/Users/rahimahmedov/VSCodeProjects/rust_vs_cpp/rust) target="ownership_demo"}: cargo::core::compiler::fingerprint: fingerprint error for ownership_demo v0.1.0 (/Users/rahimahmedov/VSCodeProjects/rust_vs_cpp/rust)/Check { test: true }/TargetInner { name: "ownership_demo", doc: true, ..: with_path("/Users/rahimahmedov/VSCodeProjects/rust_vs_cpp/rust/src/main.rs", Edition2021) }
+   0.883720917s  INFO prepare_target{force=false package_id=ownership_demo v0.1.0 (/Users/rahimahmedov/VSCodeProjects/rust_vs_cpp/rust) target="ownership_demo"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/rahimahmedov/VSCodeProjects/rust_vs_cpp/rust/target/debug/.fingerprint/ownership_demo-2a3c295e2ee338c4/test-bin-ownership_demo`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   7: cargo::ops::cargo_compile::compile_ws
+   8: cargo::ops::cargo_compile::compile_with_exec
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+   0.883879584s  INFO prepare_target{force=false package_id=ownership_demo v0.1.0 (/Users/rahimahmedov/VSCodeProjects/rust_vs_cpp/rust) target="structs_traits_generics"}: cargo::core::compiler::fingerprint: fingerprint error for ownership_demo v0.1.0 (/Users/rahimahmedov/VSCodeProjects/rust_vs_cpp/rust)/Check { test: false }/TargetInner { name: "structs_traits_generics", doc: true, ..: with_path("/Users/rahimahmedov/VSCodeProjects/rust_vs_cpp/rust/src/bin/structs_traits_generics.rs", Edition2021) }
+   0.883885875s  INFO prepare_target{force=false package_id=ownership_demo v0.1.0 (/Users/rahimahmedov/VSCodeProjects/rust_vs_cpp/rust) target="structs_traits_generics"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/rahimahmedov/VSCodeProjects/rust_vs_cpp/rust/target/debug/.fingerprint/ownership_demo-a1739a8a95f40e50/bin-structs_traits_generics`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   7: cargo::ops::cargo_compile::compile_ws
+   8: cargo::ops::cargo_compile::compile_with_exec
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+   0.884045959s  INFO prepare_target{force=false package_id=ownership_demo v0.1.0 (/Users/rahimahmedov/VSCodeProjects/rust_vs_cpp/rust) target="structs_traits_generics"}: cargo::core::compiler::fingerprint: fingerprint error for ownership_demo v0.1.0 (/Users/rahimahmedov/VSCodeProjects/rust_vs_cpp/rust)/Check { test: true }/TargetInner { name: "structs_traits_generics", doc: true, ..: with_path("/Users/rahimahmedov/VSCodeProjects/rust_vs_cpp/rust/src/bin/structs_traits_generics.rs", Edition2021) }
+   0.884052084s  INFO prepare_target{force=false package_id=ownership_demo v0.1.0 (/Users/rahimahmedov/VSCodeProjects/rust_vs_cpp/rust) target="structs_traits_generics"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/rahimahmedov/VSCodeProjects/rust_vs_cpp/rust/target/debug/.fingerprint/ownership_demo-ed19a057a7d418c3/test-bin-structs_traits_generics`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   7: cargo::ops::cargo_compile::compile_ws
+   8: cargo::ops::cargo_compile::compile_with_exec
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+    Checking ownership_demo v0.1.0 (/Users/rahimahmedov/VSCodeProjects/rust_vs_cpp/rust)
+error: could not compile `ownership_demo` (bin "memory_demo") due to 1 previous error
+warning: build failed, waiting for other jobs to finish...
+error: could not compile `ownership_demo` (bin "memory_demo" test) due to 1 previous error

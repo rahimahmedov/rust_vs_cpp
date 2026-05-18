@@ -15,7 +15,11 @@
       "Bash(cargo build *)",
       "Bash(clang++ *)",
       "Bash(make run-rust-stg *)",
-      "Bash(make run-cpp-stg *)"
+      "Bash(make run-cpp-stg *)",
+      "Bash(make run-rust-cl *)",
+      "Bash(make run-cpp-cl *)",
+      "Bash(make run-rust-it *)",
+      "Bash(make run-cpp-it *)"
     ]
   }
 }
