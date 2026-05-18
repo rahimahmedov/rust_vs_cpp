@@ -26,3 +26,18 @@ path = "src/bin/closures_demo.rs"
 [[bin]]
 name = "iterators_demo"
 path = "src/bin/iterators_demo.rs"
+
+[[bin]]
+name = "error_handling"
+path = "src/bin/error_handling.rs"
+
+[[bin]]
+name = "concurrency_demo"
+path = "src/bin/concurrency_demo.rs"
+
+[[bin]]
+name = "macros_demo"
+path = "src/bin/macros_demo.rs"
+
+[dependencies]
+proc_macros = { path = "proc_macros" }

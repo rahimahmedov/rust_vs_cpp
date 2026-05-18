@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(./cpp/concurrency_demo)",
+      "Bash(timeout 10 ./cpp/concurrency_debug)",
+      "Bash(gtimeout 10 ./cpp/concurrency_debug)",
+      "Bash(rm -f cpp/concurrency_debug)",
+      "Bash(cargo clippy *)",
+      "Bash(/Users/rahimahmedov/VSCodeProjects/rust_vs_cpp/rust/target/release/macros_demo)",
+      "Bash(/Users/rahimahmedov/VSCodeProjects/rust_vs_cpp/cpp/macros_demo)"
+    ]
+  }
+}

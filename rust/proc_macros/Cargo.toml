@@ -1,0 +1,11 @@
+[package]
+name = "proc_macros"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+proc-macro = true
+# No external dependencies — uses only the built-in `proc_macro` crate.
+# Real-world proc macros typically add `syn` (AST parsing) and `quote`
+# (token generation), but those are third-party; we stay std-only here
+# so every step of TokenStream manipulation is explicit and visible.

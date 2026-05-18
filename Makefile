@@ -1,4 +1,4 @@
-.PHONY: all rust cpp run-rust run-cpp run-rust-mem run-cpp-mem run-rust-lt run-cpp-lt run-rust-stg run-cpp-stg run-rust-cl run-cpp-cl run-rust-it run-cpp-it clean
+.PHONY: all rust cpp run-rust run-cpp run-rust-mem run-cpp-mem run-rust-lt run-cpp-lt run-rust-stg run-cpp-stg run-rust-cl run-cpp-cl run-rust-it run-cpp-it run-rust-eh run-cpp-eh run-rust-con run-cpp-con run-rust-mac run-cpp-mac clean
 
 CXX      ?= clang++
 CXXFLAGS  = -std=c++17 -Wall -Wextra -Wpedantic -O2
@@ -8,7 +8,7 @@ all: rust cpp
 rust:
 	cd rust && cargo build --release 2>&1
 
-cpp: cpp/ownership_demo cpp/memory_demo cpp/lifetime_demo cpp/structs_traits_generics cpp/closures_demo cpp/iterators_demo
+cpp: cpp/ownership_demo cpp/memory_demo cpp/lifetime_demo cpp/structs_traits_generics cpp/closures_demo cpp/iterators_demo cpp/error_handling cpp/concurrency_demo cpp/macros_demo
 
 cpp/ownership_demo: cpp/ownership_demo.cpp
 	$(CXX) $(CXXFLAGS) -o $@ $<
@@ -26,6 +26,15 @@ cpp/closures_demo: cpp/closures_demo.cpp
 	$(CXX) $(CXXFLAGS) -o $@ $<
 
 cpp/iterators_demo: cpp/iterators_demo.cpp
+	$(CXX) $(CXXFLAGS) -o $@ $<
+
+cpp/error_handling: cpp/error_handling.cpp
+	$(CXX) $(CXXFLAGS) -o $@ $<
+
+cpp/concurrency_demo: cpp/concurrency_demo.cpp
+	$(CXX) $(CXXFLAGS) -o $@ $<
+
+cpp/macros_demo: cpp/macros_demo.cpp
 	$(CXX) $(CXXFLAGS) -o $@ $<
 
 run-rust: rust
@@ -100,6 +109,42 @@ run-cpp-it: cpp
 	@echo "──────────────────────────────────────"
 	./cpp/iterators_demo
 
+run-rust-eh: rust
+	@echo "──────────────────────────────────────"
+	@echo " RUST: Error Handling Demo"
+	@echo "──────────────────────────────────────"
+	./rust/target/release/error_handling
+
+run-cpp-eh: cpp
+	@echo "──────────────────────────────────────"
+	@echo " C++: Error Handling Demo"
+	@echo "──────────────────────────────────────"
+	./cpp/error_handling
+
+run-rust-con: rust
+	@echo "──────────────────────────────────────"
+	@echo " RUST: Concurrency Demo"
+	@echo "──────────────────────────────────────"
+	./rust/target/release/concurrency_demo
+
+run-cpp-con: cpp
+	@echo "──────────────────────────────────────"
+	@echo " C++: Concurrency Demo"
+	@echo "──────────────────────────────────────"
+	./cpp/concurrency_demo
+
+run-rust-mac: rust
+	@echo "──────────────────────────────────────"
+	@echo " RUST: Macros and Metaprogramming"
+	@echo "──────────────────────────────────────"
+	./rust/target/release/macros_demo
+
+run-cpp-mac: cpp
+	@echo "──────────────────────────────────────"
+	@echo " C++: Macros and Metaprogramming"
+	@echo "──────────────────────────────────────"
+	./cpp/macros_demo
+
 clean:
 	cd rust && cargo clean
-	rm -f cpp/ownership_demo cpp/memory_demo cpp/lifetime_demo cpp/structs_traits_generics cpp/closures_demo cpp/iterators_demo
+	rm -f cpp/ownership_demo cpp/memory_demo cpp/lifetime_demo cpp/structs_traits_generics cpp/closures_demo cpp/iterators_demo cpp/error_handling cpp/concurrency_demo cpp/macros_demo
